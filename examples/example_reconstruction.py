@@ -9,6 +9,6 @@ CONFIG = yaml.safe_load(stream)
 stream.close()
 CONFIG = dotdict(CONFIG)
 
-constructor = Reconstruction(CONFIG)
+constructor = Reconstruction(CONFIG) # From struct_rep_gen 
 
 constructor.main()
